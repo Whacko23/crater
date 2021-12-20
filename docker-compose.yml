@@ -14,6 +14,8 @@ services:
     volumes:
       - ./:/var/www
       - ./docker-compose/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini:rw,delegated
+    ports:
+      - '5508:80'
     networks:
       - crater
 
